@@ -105,6 +105,7 @@ youhave.grid(row=14, column=3)
 #make a possibility to remove a task meaning erasing a label
 #do a memory of the tasks so that the app keeps memory of a task when closed
 #A save button (Val), of course(clem)
+#a change so that github stop fucking around...
 
 root.mainloop()
 
