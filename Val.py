@@ -22,7 +22,6 @@ def displaytime():
     root.after(1000, displaytime)
 #we have time as a concept, make a window and display it
 
-root = tk.Tk()
 #infos about the main window 'root'
 root.title("MyTasks")
 root.geometry('400x400')
