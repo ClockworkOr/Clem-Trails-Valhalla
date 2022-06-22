@@ -12,6 +12,9 @@ import time
 import tkinter as tk
 
 # step one, create the interface after creating the conception of time.
+from tkinter import Tk
+root = tk.Tk()
+
 
 def displaytime():
     current = time.ctime()
@@ -20,7 +23,6 @@ def displaytime():
 #we have time as a concept, make a window and display it
 
 root = tk.Tk()
-
 #infos about the main window 'root'
 root.title("MyTasks")
 root.geometry('400x400')
@@ -76,8 +78,10 @@ optnmenumin.grid(row=7, column=3)
 
 
 
-#make a function that is going to keep the results and display them
+# make a function that is going to keep the results and display them
+
 def storedisplay(keypress):
+
 
 
     tskmin = var2.get()
@@ -94,24 +98,27 @@ def storedisplay(keypress):
     rturnlabel = tk.Label(root, text=output)
     rturnlabel.grid(row=15, column=3)
 
-
-# showing the results of the function storing
-
-
 #binding Enter key to storing
 keypress = root.bind('<Return>', storedisplay)
 
+SaveButton = tk.Button(
+    text="Save",
+    padx=10,
+    pady=5,
+    command=storedisplay(keypress)
+)
 
-
+# showing the results of the function storing
 
 #Expression label
 youhave = tk.Label(root, text="Here are your tasks for the day!")
-youhave.grid(row=14, column=3)
-
-
+youhave.place(height= 50, width= 50, relx= .4, rely=.5)
 
 #make a possibility to remove a task meaning erasing a label
 #do a memory of the tasks so that the app keeps memory of a task when closed
 
 root.mainloop()
 
+#Let's make a save button.
+
+ws.mainloop()
