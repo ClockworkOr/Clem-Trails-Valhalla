@@ -7,7 +7,7 @@ CLEM-TRAILS-V is a simple task scheduling (To-do list) software to create a list
 - 06/14/2022 - Added this README
 - 06/21/2022 - Created Savebutton.py 
 - 06/21/2022 - Updates to Val.py: 
- → Added Save button
- → Replaced grid. with place. for better visual output in GUI 
- → Defined command to map the save button to "Storedisplay" function (to store save button's input to storage)
+- → Added Save button
+- → Replaced grid. with place. for better visual output in GUI 
+- → Defined command to map the save button to "Storedisplay" function (to store save button's input to storage)
  
