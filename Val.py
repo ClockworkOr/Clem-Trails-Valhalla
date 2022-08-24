@@ -1,11 +1,7 @@
-#Val
-#I'll use Val.py for changes. We can merge it onto main.py.
-#test1.
-
-#Test2
-#Bleh
-#test2
-#-------------------
+# Val
+# I'll use Val.py for changes. We can merge it onto main.py.
+# Space after the "#" in Python comments!
+# -------------------
 # this is a project to make a clock and put it on an interface
 
 import time
@@ -20,30 +16,30 @@ def displaytime():
     current = time.ctime()
     clock["text"] = current
     root.after(1000, displaytime)
-#we have time as a concept, make a window and display it
+# we have time as a concept, make a window and display it
 
-#infos about the main window 'root'
+# infos about the main window 'root'
 root.title("MyTasks")
 root.geometry('400x400')
 
-#creation of the label for the question
+# creation of the label for the question
 tsknametl = tk.Label(root, text="What tasks do you have to do?")
 tsknametl.grid(row=2, column=3)
 
-#Our clock is now showing the time
+# Our clock is now showing the time
 clock = tk.Label(root,)
 clock.grid(row=0, column=0)
 displaytime()
 
-#Making the entry for the question
+# Making the entry for the question
 taskentry = tk.Entry(root)
 taskentry.grid(row=3, column=3)
 
-#our list/dictionaries going to be used later
+# our list/dictionaries going to be used later
 tasklist = []
 
 
-#labels for the time question as well as the min and hour labels
+# labels for the time question as well as the min and hour labels
 tasktime = tk.Label(root, text="When will you do it")
 tasktime.grid(row=5, column=3)
 
@@ -53,23 +49,23 @@ hrlabel.grid(row=6, column=2)
 minlabel = tk.Label(root, text="Minutes:")
 minlabel.grid(row=7,column=2)
 
-#making a list going to be used for the choices of hour in the option menu
+# making a list going to be used for the choices of hour in the option menu
 timechoicehr = []
 for n in range(24):
     list.append(timechoicehr, str(n)+" h")
 
-#making the option menu
+# making the option menu
 var1 = tk.StringVar(root)
 var1.set("choose an option")
 optnmenuhr = tk.OptionMenu(root,var1, *timechoicehr)
 optnmenuhr.grid(row=6, column=3)
 
-#a list used for the choices of mins in option menu
+# a list used for the choices of mins in option menu
 timechoicemin = []
 for i in range(60):
     list.append(timechoicemin, str(i))
 
-#the option menu for mins
+# the option menu for mins
 var2 = tk.StringVar(root)
 var2.set("choose an option")
 optnmenumin = tk.OptionMenu(root, var2, *timechoicemin)
@@ -109,15 +105,15 @@ SaveButton = tk.Button(
 
 # showing the results of the function storing
 
-#Expression label
+# Expression label
 youhave = tk.Label(root, text="Here are your tasks for the day!")
 youhave.place(height= 50, width= 50, relx= .4, rely=.5)
 
-#make a possibility to remove a task meaning erasing a label
-#do a memory of the tasks so that the app keeps memory of a task when closed
+# make a possibility to remove a task meaning erasing a label
+# do a memory of the tasks so that the app keeps memory of a task when closed
 
 root.mainloop()
 
-#Let's make a save button.
-
-ws.mainloop()
+# Next: Add save button mapped to the same function as "Enter" (store display which shows the results upon pressing enter)
+# Next2: Establish a proper deployment path for the app. Do we want to test uploading it on a website then accessing it as a "user"? Do we want to optimize the GUI and make it prettier and cleaner? DO WE WANNA ROLL?
+# Yes we do!
