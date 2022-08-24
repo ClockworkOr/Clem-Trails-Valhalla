@@ -1,0 +1,8 @@
+Snyk is doing a fully automated, unsupervised AI's vulnerability scanner on the entire repo and its code, and any website we'd upload the app to. 
+https://snyk.io
+https://app.snyk.io/org/[PII Redacted]/integrations
+Should be all set now. Setup least-priviledged-access-control rights to the Snyk service account. Snyk can only do its job and confirm no vulnerabilities are found within our code itself.
+Next: As a test, create a repo and upload malware code and port scanners. Setup Snyk, and analyze the scans' outputs. Need to test it against a real threat to gauge efficiency and whether the bot needs a little bit of supervision/human adjustments.
+Per above point, during the test, see how far we can push malicious code and how the software behaves. Curious to find out more about the alleged "Remediation" automation as well. 
+This was not at all a procrastinor's move to avoid having to write Python things for the next couple weeks. This project stands so long as our brotherhood does, and whatever it ends up turning into will 100% be something to facilitate laziness. I'll get back into it in 3 weeks; will test Snyk on malicious code on another repo within 2 months. 
+These ETAs won't be respected either. Oh well. Stay happy and healthy.
